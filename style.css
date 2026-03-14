@@ -1,3 +1,17 @@
+/* ===== Demo Banner ===== */
+.demo-banner {
+  background: #f5a623;
+  color: #000;
+  text-align: center;
+  padding: .45rem 1rem;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
 /* ===== Base ===== */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
