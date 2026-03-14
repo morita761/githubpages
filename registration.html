@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration – JDRC17</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">JDRC17</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About JDRC17</a></li>
+      <li><a href="registration.html" class="active">Registration</a></li>
+      <li><a href="abstract.html">Abstract Submission</a></li>
+      <li><a href="participants.html">For Participants</a></li>
+      <li><a href="venue.html">Venue &amp; Access</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Registration / 参加登録</h1>
+</div>
+
+<main class="container">
+
+  <div class="alert">
+    Registration will open on <strong>June 1, 2026</strong>. / 参加登録は <strong>2026年6月1日</strong> から開始予定です。
+  </div>
+
+  <section class="section-block">
+    <h2 class="section-title">Registration Fees / 参加費</h2>
+    <table class="dates-table">
+      <thead>
+        <tr><th>Category / 区分</th><th>Early (by Sep 30) / 早期</th><th>Regular (by Oct 20) / 通常</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Faculty / Member（会員・教員）</td><td>¥10,000</td><td>¥13,000</td></tr>
+        <tr><td>Postdoc（ポスドク）</td><td>¥7,000</td><td>¥9,000</td></tr>
+        <tr><td>Student（学生）</td><td>¥4,000</td><td>¥5,000</td></tr>
+        <tr><td>Banquet / 懇親会 (optional)</td><td colspan="2">¥5,000 (all categories)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-title">How to Register / 登録方法</h2>
+    <p>Please use the online registration form. Registration details will be announced when the system opens.</p>
+    <p>オンライン登録フォームをご利用ください。システム公開時に詳細をお知らせします。</p>
+    <a class="btn" href="#" style="opacity:.5; cursor:not-allowed;" onclick="return false;">Registration Form (Opening June 1)</a>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-title">Cancellation Policy / キャンセルポリシー</h2>
+    <p>Cancellations received by October 20, 2026 will receive a full refund minus a ¥1,000 processing fee. No refunds will be issued after October 20, 2026.</p>
+    <p>2026年10月20日までのキャンセルは、事務手数料1,000円を差し引いた金額を返金いたします。10月20日以降のキャンセルは返金できません。</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 JDRC17 Organizing Committee. All rights reserved.</p>
+  <p style="margin-top:.4rem;"><a href="contact.html">Contact</a></p>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

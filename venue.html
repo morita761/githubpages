@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venue &amp; Access – JDRC17</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .map-embed {
+      width: 100%;
+      height: 380px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin-top: .75rem;
+    }
+    .access-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: .75rem;
+    }
+    .access-card {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1rem 1.25rem;
+    }
+    .access-card .icon { font-size: 1.4rem; margin-bottom: .4rem; }
+    .access-card strong { display: block; margin-bottom: .3rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">JDRC17</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About JDRC17</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="abstract.html">Abstract Submission</a></li>
+      <li><a href="participants.html">For Participants</a></li>
+      <li><a href="venue.html" class="active">Venue &amp; Access</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Venue &amp; Access / 会場・アクセス</h1>
+</div>
+
+<main class="container">
+
+  <section class="section-block">
+    <h2 class="section-title">Venue / 会場</h2>
+    <p>
+      <strong>Multi-purpose Digital Hall, West Building 9</strong><br>
+      Ookayama Campus, Institute of Science Tokyo<br>
+      (Formerly Tokyo Institute of Technology)<br>
+      2-12-1 Ookayama, Meguro-ku, Tokyo 152-8550, Japan
+    </p>
+    <p>
+      <strong>東京科学大学 大岡山キャンパス 西9号館 多目的デジタルホール</strong><br>
+      〒152-8550 東京都目黒区大岡山2-12-1
+    </p>
+    <iframe
+      class="map-embed"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.6!2d139.6826!3d35.6038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f49a7e94a8e5%3A0x1a5d6e9a0ed85ab6!2z5p2x5Lqs56eR5a2m5aSn5a2m5aSn5a2m5aSn5a2m!5e0!3m2!1sja!2sjp!4v1700000000000"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Map to Institute of Science Tokyo"
+    ></iframe>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-title">Access / アクセス</h2>
+    <div class="access-grid">
+      <div class="access-card">
+        <div class="icon">🚃</div>
+        <strong>By Train / 電車</strong>
+        <p>Tokyo Meguro Line / 東急目黒線<br><strong>Ookayama Station</strong> – 1 min walk / 徒歩1分</p>
+      </div>
+      <div class="access-card">
+        <div class="icon">🚇</div>
+        <strong>By Subway / 地下鉄</strong>
+        <p>Tokyo Metro Namboku Line / 南北線<br>Tokyo Metro Mita Line / 三田線<br><strong>Ookayama Station</strong> – 1 min walk / 徒歩1分</p>
+      </div>
+      <div class="access-card">
+        <div class="icon">🚌</div>
+        <strong>By Bus / バス</strong>
+        <p>Several bus routes stop at Ookayama. Please check the transit app for the latest schedules. / 大岡山停留所にいくつかのバスが停車します。</p>
+      </div>
+      <div class="access-card">
+        <div class="icon">🅿️</div>
+        <strong>Parking / 駐車場</strong>
+        <p>No on-site parking for conference attendees. Please use public transport. / 参加者向け駐車場はありません。公共交通機関をご利用ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-title">Nearby Hotels / 近隣ホテル</h2>
+    <p>The following areas have hotels within convenient distance of the venue:</p>
+    <ul style="padding-left:1.3rem; line-height:2;">
+      <li>Ookayama / 大岡山周辺</li>
+      <li>Meguro / 目黒周辺</li>
+      <li>Jiyugaoka / 自由が丘周辺</li>
+      <li>Gotanda / 五反田周辺</li>
+    </ul>
+    <p style="font-size:.87rem; color:var(--text-light);">We recommend booking early, as availability can be limited in November. / 11月は宿泊施設が混み合う場合がありますので、お早めのご予約をお勧めします。</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 JDRC17 Organizing Committee. All rights reserved.</p>
+  <p style="margin-top:.4rem;"><a href="contact.html">Contact</a></p>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
